@@ -32,14 +32,14 @@ model.fit(x_train, y_train, epochs=5, verbose=1, validation_data=(x_test, y_test
 ## Preguntas
 
 ¿Qué es Keras comparado con TensorFlow, y cuál es su función?
-Son sistemas con una arquitectua similar que conviven uno con el otro. TensorFlow es una arquitectura que permite hacer deep learning mediante el uso de Tensors, que es un tipo de dato propio, Keras se usa para crear y entrenar los modelos.
+Son sistemas con una arquitectua similar que conviven uno con el otro. TensorFlow es una arquitectura que permite hacer deep learning mediante el uso de Tensors, que es un tipo de dato propio que puede tomar la forma de un arreglo de n-dimensiones (ejemplos son vectores o matrices de tamaño n) de valores numericos ya sean constantes o variables; Keras se usa para crear y entrenar los modelos.
 
 ¿Por qué TensorFlow uasr "graphs" o gráficos y como se crean manualmente?
-Un Tensor es un arreglo de N-dimensiones, los gráficos son una forma de poder representarlos y mostrarlos.
+Los gráficos son una forma de poder representar y mostrar las operaciones a realizar a un tensor para obtener uan salida que sea igual de tipo tensor.
 En TensworFlow 2 los gráficos ya no los tiene que hacer el usuario.
 
 ¿Cuál es la diferencia entre el modo de 'eager execution' y 'lazy execution'?
-TensorFlow2 implementa un modo llamado "Eager Execution", la diferencia con su predecesor que siempre usaba "Lazy Exceution" por defecto. Es que las operaciones no se ejecutban por el framework si no se le indicaba específicamente que fuese así.
+TensorFlow2 implementa un modo llamado "Eager Execution", la diferencia con su predecesor, que siempre usaba "Lazy Exceution" por defecto, es que las operaciones no se ejecutban por el framework si no se le indicaba específicamente que fuese así.
 Este cambio lo que hace es optimizar algunos resultados y datos de salida.
 
 ¿Cómo ingresar información en TensorBoard y como mostrarla?
